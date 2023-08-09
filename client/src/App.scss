@@ -1,5 +1,5 @@
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 300;
   background-color: #e2e8f0;
   padding: 40px;
@@ -9,7 +9,7 @@ label {
   display: flex;
   flex-direction: column;
   letter-spacing: 0.05rem;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 400;
   color: #222;
 }
@@ -58,9 +58,12 @@ input {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9em;
   &:hover {
     cursor: pointer;
+  }
+  &:disabled {
+    background-color: rgb(134, 15, 15);
   }
 }
 
@@ -72,11 +75,36 @@ input {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
-    font-size: .9em;
+    font-size: 0.9em;
     display: inline-flex;
     margin-top: 10px;
     padding: 0.75rem;
     background-color: #f4f6f8;
+  }
+}
+
+.flexc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .key {
+    flex: 1;
+  }
+  button {
+    background-color: #319795;
+    border-radius: 0.125rem;
+    padding: 10px 20px;
+    color: white;
+    display: inline-flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 0.9em;
+    border: 0;
+    &:hover {
+      background-color: #3197957c;
+      cursor: pointer;
+    }
   }
 }
 
